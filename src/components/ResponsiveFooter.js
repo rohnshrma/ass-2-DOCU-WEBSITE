@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ResponsiveFooter.css';
 
 const ResponsiveFooter = () => {
@@ -35,32 +36,32 @@ const ResponsiveFooter = () => {
           <div className="footer-section">
             <h4 className="footer-subtitle">Components</h4>
             <ul className="footer-links">
-              <li><a href="/docs/responsivenavbar">ResponsiveNavbar</a></li>
-              <li><a href="/docs/herosection">HeroSection</a></li>
-              <li><a href="/docs/ticketcards">TicketCards</a></li>
-              <li><a href="/docs/imagegallery">ImageGallery</a></li>
-              <li><a href="/docs/custombutton">CustomButton</a></li>
-              <li><a href="/docs/responsivefooter">ResponsiveFooter</a></li>
+              <li><Link to="/docs/responsivenavbar">ResponsiveNavbar</Link></li>
+              <li><Link to="/docs/herosection">HeroSection</Link></li>
+              <li><Link to="/docs/ticketcards">TicketCards</Link></li>
+              <li><Link to="/docs/imagegallery">ImageGallery</Link></li>
+              <li><Link to="/docs/custombutton">CustomButton</Link></li>
+              <li><Link to="/docs/responsivefooter">ResponsiveFooter</Link></li>
             </ul>
           </div>
           
           <div className="footer-section">
             <h4 className="footer-subtitle">Resources</h4>
             <ul className="footer-links">
-              <li><a href="/docs">Documentation</a></li>
-            <li><a href="/docs">Getting Started</a></li>
-            <li><a href="/docs">Examples</a></li>
-            <li><a href="https://github.com">GitHub</a></li>
+              <li><Link to="/docs">Documentation</Link></li>
+              <li><Link to="/docs">Getting Started</Link></li>
+              <li><Link to="/">Examples</Link></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
           </div>
           
           <div className="footer-section">
             <h4 className="footer-subtitle">Support</h4>
             <ul className="footer-links">
-            <li><a href="https://help.example.com">Help Center</a></li>
-            <li><a href="https://community.example.com">Community</a></li>
-            <li><a href="mailto:contact@example.com">Contact</a></li>
-            <li><a href="https://github.com/issues">Issues</a></li>
+              <li><Link to="/docs">Help Center</Link></li>
+              <li><a href="https://github.com/discussions" target="_blank" rel="noopener noreferrer">Community</a></li>
+              <li><a href="mailto:support@traviscomponentlib.com">Contact</a></li>
+              <li><a href="https://github.com/issues" target="_blank" rel="noopener noreferrer">Report Issues</a></li>
             </ul>
           </div>
         </div>
@@ -70,9 +71,9 @@ const ResponsiveFooter = () => {
             <p>&copy; {currentYear} TravisComponentLib. All rights reserved.</p>
           </div>
           <div className="footer-legal">
-            <a href="https://example.com/privacy">Privacy Policy</a>
-            <a href="https://example.com/terms">Terms of Service</a>
-            <a href="https://example.com/license">License</a>
+            <Link to="/">Privacy Policy</Link>
+            <Link to="/">Terms of Service</Link>
+            <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>
           </div>
         </div>
       </div>

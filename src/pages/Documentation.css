@@ -184,7 +184,7 @@
 
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 0.5rem);
   left: 0;
   width: 200%;
   background: var(--secondary-dark);
@@ -192,7 +192,6 @@
   border-radius: 8px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  margin-top: 0.5rem;
   overflow: hidden;
 }
 
@@ -274,8 +273,8 @@
   
   .dropdown-menu {
     width: 300px;
-    left: auto;
-    right: 0;
+    left: 0;
+    right: auto;
   }
 }
 
